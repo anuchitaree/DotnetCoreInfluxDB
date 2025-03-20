@@ -1,0 +1,18 @@
+﻿organization: organization   
+API Token: NvFCvRuTTjFK31vTAhBNR-3uU05mj3DGb4BdOa1ii8XqlwNICwOGHXxU6ninOYTdUJNqeou6OCqBQ1gOFP-KkA==
+
+
+INSERT weather,location=Bangkok,device_id=D01,sensor_type=thermometer temperature=32,humidity=70 1679040000000000000
+INSERT weather,location=Bangkok,device_id=D02,sensor_type=hygrometer temperature=31,humidity=72 1679043600000000000
+INSERT weather,location=ChiangMai,device_id=D03,sensor_type=thermometer temperature=28,humidity=60 1679047200000000000
+INSERT weather,location=ChiangMai,device_id=D04,sensor_type=hygrometer temperature=27,humidity=65 1679050800000000000
+INSERT weather,location=Phuket,device_id=D05,sensor_type=thermometer temperature=30,humidity=80 1679054400000000000
+INSERT weather,location=Phuket,device_id=D06,sensor_type=hygrometer temperature=29,humidity=85 1679058000000000000
+
+
+1. run influxd
+2. cd /usr/bin
+3. influx v1 shell -t NvFCvRuTTjFK31vTAhBNR-3uU05mj3DGb4BdOa1ii8XqlwNICwOGHXxU6ninOYTdUJNqeou6OCqBQ1gOFP-KkA==
+4. show DATABASES     // database name
+5. use result
+6. show MEASUREMENTS // table name
